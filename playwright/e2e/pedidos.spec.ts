@@ -1,34 +1,66 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '../support/fixtures'
+import { generateOrderCode } from '../support/helpers'
+import type { OrderDetails } from '../support/actions/orderLookupActions'
+import { insertOrder, deleteOrderByNumber } from '../support/database/orderRepository'
 
+import testData from '../support/fixtures/orders.json' with { type: 'json' }
 
-// AAA - Arrange, Act, Assert   
-test('deve consultar um pedido aprovado', async ({ page }) => {
-  await page.goto('http://localhost:5173/');
+test.describe('Consulta de Pedido', () => {
 
-  //Checkpoint
-  await expect(page.getByTestId('hero-section').getByRole('heading')).toContainText('Velô Sprint');
-  
-  await page.getByRole('link', { name: 'Consultar Pedido' }).click();
-  
-  //Checkpoint
-  await expect(page.getByRole('heading')).toContainText('Consultar Pedido');
+  test.beforeEach(async ({ app }) => {
+    await app.orderLookup.open()
+  })
 
-  //await page.getByTestId('search-order-id').fill('VLO-XH7WDG');
-  await page.getByRole('textbox', { name: 'Número do Pedido' }).fill('VLO-XH7WDG');
-  await page.getByRole('button', { name: 'Buscar Pedido' }).click();
-  //await page.locator('//button[text()="Buscar Pedido"]').click();
+  test('deve consultar um pedido aprovado', async ({ app }) => {
+    const order: OrderDetails = testData.aprovado as OrderDetails
 
-  //await page.waitForTimeout(10000); estrategia ruim pois espera sempre pelo tempo informado passar.
+    await deleteOrderByNumber(order.number)
+    await insertOrder(order)
 
-  //await expect(page.getByTestId('order-result-id')).toBeVisible({ timeout: 30000 });  //estrategia boa pois espera até o tempo informado mas fica tentando e pode acabr antes.
-  //await expect(page.getByTestId('order-result-id')).toContainText('VLO-XH7WDG');
+    await app.orderLookup.searchOrder(order.number)
+    await app.orderLookup.validateOrderDetails(order)
+    await app.orderLookup.validateStatusBadge(order.status)
+  })
 
-  const pedidoBlock = page.locator('div').filter({ has: page.getByText(/^Pedido$/) }).first();
-  await expect(pedidoBlock).toContainText('VLO-XH7WDG');
+  test('deve consultar um pedido reprovado', async ({ app }) => {
+    const order: OrderDetails = testData.reprovado as OrderDetails
 
-  //await expect(page.getByTestId('order-result-status')).toBeVisible();
-  //await expect(page.getByTestId('order-result-status')).toContainText('APROVADO');
+    await deleteOrderByNumber(order.number)
+    await insertOrder(order)
 
-  const resultadoCard = page.locator('div[role="main"], body').locator('section, div').filter({ hasText: 'Pedido' }).first();
-  await expect(resultadoCard).toContainText('APROVADO');
-});
+    await app.orderLookup.searchOrder(order.number)
+    await app.orderLookup.validateOrderDetails(order)
+    await app.orderLookup.validateStatusBadge(order.status)
+  })
+
+  test('deve consultar um pedido em analise', async ({ app }) => {
+    const order: OrderDetails = testData.em_analise as OrderDetails
+
+    await deleteOrderByNumber(order.number)
+    await insertOrder(order)
+
+    await app.orderLookup.searchOrder(order.number)
+    await app.orderLookup.validateOrderDetails(order)
+    await app.orderLookup.validateStatusBadge(order.status)
+  })
+
+  test('deve exibir mensagem quando o pedido não é encontrado', async ({ app }) => {
+    const order = generateOrderCode()
+    await app.orderLookup.searchOrder(order)
+    await app.orderLookup.validateOrderNotFound()
+  })
+
+  test('deve exibir mensagem quando o código do pedido está fora do padrão', async ({ app }) => {
+    const orderCode = 'XYZ-999-INVALIDO'
+    await app.orderLookup.searchOrder(orderCode)
+    await app.orderLookup.validateOrderNotFound()
+  })
+
+  test('deve manter o botão de busca desabilitado com campo vazio ou apenas espaços', async ({ app, page }) => {
+    const button = app.orderLookup.elements.searchButton
+    await expect(button).toBeDisabled()
+
+    await app.orderLookup.elements.orderInput.fill('     ')
+    await expect(button).toBeDisabled()
+  })
+})
