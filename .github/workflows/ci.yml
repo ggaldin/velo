@@ -8,6 +8,9 @@ on:
       - main
 env:
   NODE_VERSION: '24'
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  VERCEL_SCOPE: gustavo-galdin-s-projects
+
 jobs:
   unit-tests:
     name: Unit Tests
@@ -30,3 +33,32 @@ jobs:
       # Passo 5: Executar os testes unitários via Vitest
       - name: Run unit tests
         run: yarn test
+  
+  build-and-deploy:
+    name: Build and Deploy Vercel Preview
+    needs: [unit-tests]
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Passo 1: Fazer checkout do código
+      - name: Checkout repository
+        uses: actions/checkout@v6.0.2
+      # Passo 2: Configurar Node.js com a versão definida
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v6.4.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      # Passo 3: Habilitar Corepack para usar Yarn
+      - name: Enable Corepack
+        run: corepack enable
+      # Passo 4: Instalar dependências com Yarn
+      - name: Install dependencies
+        run: yarn install
+
+      # Passo 5: Build para o Vercel
+      - name: Build Vercel
+        run: yarn vercel build --token=$VERCEL_TOKEN
+
+      # 6. Deploy preview no vercel
+      - name: Deploy preview
+        run: yarn vercel deploy --prebuild --target=preview --token=$VERCEL_TOKEN --scope=$VERCEL_SCOPE
