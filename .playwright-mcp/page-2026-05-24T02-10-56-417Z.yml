@@ -1,0 +1,408 @@
+- generic [active] [ref=e1]:
+  - link "Ir para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "Site" [ref=e6]:
+        - generic "Menu principal" [ref=e7]:
+          - button "Menu principal" [ref=e8] [cursor=pointer]
+          - generic [ref=e11]: Menu principal
+      - link "Wikipédia" [ref=e12] [cursor=pointer]:
+        - /url: /wiki/Wikip%C3%A9dia:P%C3%A1gina_principal
+        - img [ref=e13]
+        - img "Wikipédia" [ref=e15]
+    - generic [ref=e16]:
+      - search [ref=e17]:
+        - link "Busca" [ref=e18] [cursor=pointer]:
+          - /url: /wiki/Especial:Pesquisar
+          - generic [ref=e20]: Busca
+      - navigation "Ferramentas pessoais" [ref=e21]:
+        - generic [ref=e22]:
+          - navigation "Aparência" [ref=e23]:
+            - generic "Alterar a aparência do tamanho do tipo de letra, a largura, e a cor da página" [ref=e24]:
+              - button "Aparência" [ref=e25] [cursor=pointer]
+              - generic [ref=e28]: Aparência
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Doar" [ref=e33] [cursor=pointer]:
+                - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=pt.wikipedia.org&uselang=pt
+            - listitem [ref=e34]:
+              - link "Criar conta" [ref=e35] [cursor=pointer]:
+                - /url: /w/index.php?title=Especial:Criar_conta&returnto=Especial%3APesquisar&returntoquery=go%3DGo%26search%3DPlaywright
+            - listitem [ref=e36]:
+              - link "Iniciar sessão" [ref=e37] [cursor=pointer]:
+                - /url: /w/index.php?title=Especial:Entrar&returnto=Especial%3APesquisar&returntoquery=go%3DGo%26search%3DPlaywright
+  - generic [ref=e39]:
+    - main [ref=e41]:
+      - generic [ref=e42]:
+        - heading "Resultados da pesquisa" [level=1] [ref=e43]
+        - link "Ajuda" [ref=e46] [cursor=pointer]:
+          - /url: https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch
+          - text: Ajuda
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - navigation "Espaços nominais"
+        - generic [ref=e51]:
+          - navigation "Visualizações"
+          - navigation "Ferramentas de página" [ref=e52]:
+            - generic [ref=e53]:
+              - button "Ferramentas" [ref=e54] [cursor=pointer]
+              - generic [ref=e56] [cursor=pointer]: Ferramentas
+      - generic "Resultados da pesquisa" [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e60]:
+            - generic:
+              - generic [ref=e63]:
+                - combobox [ref=e66]: Playwright
+                - button "Procurar" [ref=e71] [cursor=pointer]
+              - generic [ref=e72]:
+                - text: Resultados
+                - strong [ref=e73]: 1 - 20
+                - text: de
+                - strong [ref=e74]: "279"
+            - generic [ref=e75]:
+              - button "Pesquisa avançada:" [ref=e78] [cursor=pointer]:
+                - generic [ref=e80]:
+                  - generic [ref=e81]: "Pesquisa avançada:"
+                  - list "Termos de pesquisa usados atualmente"
+              - button "Pesquisar em:" [ref=e85] [cursor=pointer]:
+                - generic [ref=e87]:
+                  - generic [ref=e88]: "Pesquisar em:"
+                  - list "Filtros de espaço nominal atualmente ativos" [ref=e89]:
+                    - listitem "(Principal)" [ref=e90]:
+                      - generic [ref=e91]: (Principal)
+                      - button "Remover" [ref=e93]
+          - generic [ref=e96]:
+            - paragraph [ref=e98]:
+              - generic [ref=e99]:
+                - text: Pode criar a página com o título "
+                - link "Playwright" [ref=e100] [cursor=pointer]:
+                  - /url: /w/index.php?title=Playwright&action=edit&redlink=1
+                - text: "\", mas verifique se há alguma página sobre esse assunto com outro nome nos seguintes resultados da busca (caso existam)."
+            - generic [ref=e102]:
+              - combobox [ref=e105]:
+                - option "20 linhas" [selected]
+                - option "50 linhas"
+                - option "100 linhas"
+                - option "250 linhas"
+                - option "500 linhas"
+              - generic [ref=e106]:
+                - button "Primeira página" [ref=e107] [cursor=pointer]
+                - button "Página anterior" [ref=e109] [cursor=pointer]
+                - button "Página seguinte" [ref=e111] [cursor=pointer]
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - generic [ref=e116]:
+                  - link "Miniatura para Carrie Coon" [ref=e118] [cursor=pointer]:
+                    - /url: /wiki/Carrie_Coon
+                    - img "Miniatura para Carrie Coon" [ref=e119]
+                  - generic [ref=e120]:
+                    - link "Carrie Coon" [ref=e122] [cursor=pointer]:
+                      - /url: /wiki/Carrie_Coon
+                    - generic [ref=e123] [cursor=pointer]: "Biography». Buddy TV. Consultado em 4 de julho de 2014 «August: Osage County Playwright Tracy Letts On His Hospital-Room Marriage and Claire Danes's \"Giant Baby\"»..."
+                    - generic [ref=e124] [cursor=pointer]: 7 kB (449 palavras) – 00h06min de 30 de março de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e125] [cursor=pointer]
+              - listitem [ref=e126]:
+                - generic [ref=e127]:
+                  - link "Miniatura para Pedro Pascal" [ref=e129] [cursor=pointer]:
+                    - /url: /wiki/Pedro_Pascal
+                    - img "Miniatura para Pedro Pascal" [ref=e130]
+                  - generic [ref=e131]:
+                    - link "Pedro Pascal" [ref=e133] [cursor=pointer]:
+                      - /url: /wiki/Pedro_Pascal
+                    - generic [ref=e134] [cursor=pointer]: voltou a dirigir, com as peças Yosemite e Killing Play no Rattlestick Playwrights Theater, teatro de West Village, Nova York. O ator já declarou que nessa...
+                    - generic [ref=e135] [cursor=pointer]: 34 kB (2 369 palavras) – 14h45min de 4 de maio de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e136] [cursor=pointer]
+              - listitem [ref=e137]:
+                - generic [ref=e138]:
+                  - link "Miniatura para Colman Domingo" [ref=e140] [cursor=pointer]:
+                    - /url: /wiki/Colman_Domingo
+                    - img "Miniatura para Colman Domingo" [ref=e141]
+                  - generic [ref=e142]:
+                    - link "Colman Domingo" [ref=e144] [cursor=pointer]:
+                      - /url: /wiki/Colman_Domingo
+                    - generic [ref=e145] [cursor=pointer]: Lisa B. Thompson Novo teatro profissional na Peter JaySharp Theatre Playwrights Horizons 2008 Single Black Woman Lisa B. Thompson Novo teatro profissional...
+                    - generic [ref=e146] [cursor=pointer]: 70 kB (4 419 palavras) – 18h43min de 27 de abril de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e147] [cursor=pointer]
+              - listitem [ref=e148]:
+                - generic [ref=e149]:
+                  - link "Miniatura para Travessia do Rubicão" [ref=e151] [cursor=pointer]:
+                    - /url: /wiki/Travessia_do_Rubic%C3%A3o
+                    - img "Miniatura para Travessia do Rubicão" [ref=e152]
+                  - generic [ref=e153]:
+                    - link "Travessia do Rubicão" [ref=e155] [cursor=pointer]:
+                      - /url: /wiki/Travessia_do_Rubic%C3%A3o
+                    - generic [ref=e156] [cursor=pointer]: "according to Plutarch's Parallel Lives, Caesar quoted a line from the playwright Menander: \"ἀνερρίφθω κύβος\", anerríphthō kȳbos, \"let the die be cast\"..."
+                    - generic [ref=e157] [cursor=pointer]: 6 kB (731 palavras) – 22h52min de 17 de janeiro de 2024
+                    - button "Abrir a antevisão deste artigo." [ref=e158] [cursor=pointer]
+              - listitem [ref=e159]:
+                - generic [ref=e160]:
+                  - link "Miniatura para Timothée Chalamet" [ref=e162] [cursor=pointer]:
+                    - /url: /wiki/Timoth%C3%A9e_Chalamet
+                    - img "Miniatura para Timothée Chalamet" [ref=e163]
+                  - generic [ref=e164]:
+                    - link "Timothée Chalamet" [ref=e166] [cursor=pointer]:
+                      - /url: /wiki/Timoth%C3%A9e_Chalamet
+                    - generic [ref=e167] [cursor=pointer]: setembro de 2018 Henderson, Kathy (7 de março de 2016). «Prodigal Son Playwright John Patrick Shanley & Star Timothee Chalamet on the Pain, Poetry & Pride...
+                    - generic [ref=e168] [cursor=pointer]: 85 kB (7 081 palavras) – 03h02min de 26 de março de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e169] [cursor=pointer]
+              - listitem [ref=e170]:
+                - generic [ref=e171]:
+                  - link "Miniatura para Robert Oppenheimer" [ref=e173] [cursor=pointer]:
+                    - /url: /wiki/Robert_Oppenheimer
+                    - img "Miniatura para Robert Oppenheimer" [ref=e174]
+                  - generic [ref=e175]:
+                    - link "Robert Oppenheimer" [ref=e177] [cursor=pointer]:
+                      - /url: /wiki/Robert_Oppenheimer
+                    - generic [ref=e178] [cursor=pointer]: 2005, pp. 3, 5, passim Hewlett & Holl 1989, p. xxii Bundy 1988, p. 316 «Playwright Suggests Corrections to Oppenheimer Drama». The New York Times. 14 de...
+                    - generic [ref=e179] [cursor=pointer]: 151 kB (17 951 palavras) – 03h42min de 9 de janeiro de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e180] [cursor=pointer]
+              - listitem [ref=e181]:
+                - generic [ref=e182]:
+                  - link "Miniatura para Anna Gunn" [ref=e184] [cursor=pointer]:
+                    - /url: /wiki/Anna_Gunn
+                    - img "Miniatura para Anna Gunn" [ref=e185]
+                  - generic [ref=e186]:
+                    - link "Anna Gunn" [ref=e188] [cursor=pointer]:
+                      - /url: /wiki/Anna_Gunn
+                    - generic [ref=e189] [cursor=pointer]: Wrestler-actor Hulk Hogan is 56. Singer-songwriter Joe Jackson is 55. Playwright David Henry Hwang is 52. Actor Miguel A. Nunez Jr. is 45. Actress Viola...
+                    - generic [ref=e190] [cursor=pointer]: 16 kB (715 palavras) – 11h59min de 26 de janeiro de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e191] [cursor=pointer]
+              - listitem [ref=e192]:
+                - generic [ref=e193]:
+                  - link "Miniatura para Kieran Culkin" [ref=e195] [cursor=pointer]:
+                    - /url: /wiki/Kieran_Culkin
+                    - img "Miniatura para Kieran Culkin" [ref=e196]
+                  - generic [ref=e197]:
+                    - link "Kieran Culkin" [ref=e199] [cursor=pointer]:
+                      - /url: /wiki/Kieran_Culkin
+                    - generic [ref=e200] [cursor=pointer]: Obie Award pela performance 2003 This is Our Youth Warren Garrick Theatre em Londres 2000 The Moment When Wilson Playwrights Horizons em Nova Iorque...
+                    - generic [ref=e201] [cursor=pointer]: 17 kB (513 palavras) – 23h09min de 13 de março de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e202] [cursor=pointer]
+              - listitem [ref=e203]:
+                - generic [ref=e204]:
+                  - link "Miniatura para Liev Tolstói" [ref=e206] [cursor=pointer]:
+                    - /url: /wiki/Liev_Tolst%C3%B3i
+                    - img "Miniatura para Liev Tolstói" [ref=e207]
+                  - generic [ref=e208]:
+                    - link "Liev Tolstói" [ref=e210] [cursor=pointer]:
+                      - /url: /wiki/Liev_Tolst%C3%B3i
+                    - generic [ref=e211] [cursor=pointer]: "(2009). The literary 100 : a ranking of the most influential novelists, playwrights, and poets of all time. Internet Archive. [S.l.]: New York, NY : Facts..."
+                    - generic [ref=e212] [cursor=pointer]: 44 kB (5 106 palavras) – 13h20min de 10 de setembro de 2025
+                    - button "Abrir a antevisão deste artigo." [ref=e213] [cursor=pointer]
+              - listitem [ref=e214]:
+                - generic [ref=e215]:
+                  - link "Miniatura para Ad-Rock" [ref=e217] [cursor=pointer]:
+                    - /url: /wiki/Ad-Rock
+                    - img "Miniatura para Ad-Rock" [ref=e218]
+                  - generic [ref=e219]:
+                    - link "Ad-Rock" [ref=e221] [cursor=pointer]:
+                      - /url: /wiki/Ad-Rock
+                    - generic [ref=e222] [cursor=pointer]: 2011). «Jewish Stars 12/16». Cleveland Jewish News. His father, famous playwright Israel Horovitz, 72, said a few years ago that he regretted raising Adam...
+                    - generic [ref=e223] [cursor=pointer]: 4 kB (417 palavras) – 20h27min de 2 de maio de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e224] [cursor=pointer]
+              - listitem [ref=e225]:
+                - generic [ref=e226]:
+                  - link "Miniatura para Franz Kafka" [ref=e228] [cursor=pointer]:
+                    - /url: /wiki/Franz_Kafka
+                    - img "Miniatura para Franz Kafka" [ref=e229]
+                  - generic [ref=e230]:
+                    - link "Franz Kafka" [ref=e232] [cursor=pointer]:
+                      - /url: /wiki/Franz_Kafka
+                    - generic [ref=e233] [cursor=pointer]: "Criticism: Excerpts from Criticism of the Works of Novelists, Poets, Playwrights, Short Story Writers, & Other Creative Writers Who Died Between 1900..."
+                    - generic [ref=e234] [cursor=pointer]: 135 kB (14 162 palavras) – 13h54min de 6 de janeiro de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e235] [cursor=pointer]
+              - listitem [ref=e236]:
+                - generic [ref=e237]:
+                  - link "Miniatura para Alison Pill" [ref=e239] [cursor=pointer]:
+                    - /url: /wiki/Alison_Pill
+                    - img "Miniatura para Alison Pill" [ref=e240]
+                  - generic [ref=e241]:
+                    - link "Alison Pill" [ref=e243] [cursor=pointer]:
+                      - /url: /wiki/Alison_Pill
+                    - generic [ref=e244] [cursor=pointer]: Jake Built with Alison Pill, Katie Lowes and more...». JONATHAN CAREN – Playwright TV/Film. Consultado em 14 de julho de 2015 O Commons possui uma categoria...
+                    - generic [ref=e245] [cursor=pointer]: 13 kB (482 palavras) – 18h40min de 20 de janeiro de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e246] [cursor=pointer]
+              - listitem [ref=e247]:
+                - generic [ref=e248]:
+                  - link "Miniatura para Sam Shepard" [ref=e250] [cursor=pointer]:
+                    - /url: /wiki/Sam_Shepard
+                    - img "Miniatura para Sam Shepard" [ref=e251]
+                  - generic [ref=e252]:
+                    - link "Sam Shepard" [ref=e254] [cursor=pointer]:
+                      - /url: /wiki/Sam_Shepard
+                    - generic [ref=e255] [cursor=pointer]: 31 de julho de 2017 Ben Brantley (ed.). «Sam Shepard Pulitzer Winning Playwright and Actor Is Dead at 73». The New York Times. Consultado em 31 de julho...
+                    - generic [ref=e256] [cursor=pointer]: 19 kB (1 702 palavras) – 18h45min de 1 de abril de 2025
+                    - button "Abrir a antevisão deste artigo." [ref=e257] [cursor=pointer]
+              - listitem [ref=e258]:
+                - generic [ref=e259]:
+                  - link "Miniatura para Marco Calvani" [ref=e261] [cursor=pointer]:
+                    - /url: /wiki/Marco_Calvani
+                    - img "Miniatura para Marco Calvani" [ref=e262]
+                  - generic [ref=e263]:
+                    - link "Marco Calvani" [ref=e265] [cursor=pointer]:
+                      - /url: /wiki/Marco_Calvani
+                    - generic [ref=e266] [cursor=pointer]: Internationale des Arts (Residência Artística) 2011, SIAE Prize for Best Playwright, Itália «kunsthaus-tacheles.de - This website is for sale! - kunsthaus...
+                    - generic [ref=e267] [cursor=pointer]: 11 kB (1 224 palavras) – 21h32min de 27 de setembro de 2024
+                    - button "Abrir a antevisão deste artigo." [ref=e268] [cursor=pointer]
+              - listitem [ref=e269]:
+                - generic [ref=e270]:
+                  - link "Miniatura para Ethan Hawke" [ref=e272] [cursor=pointer]:
+                    - /url: /wiki/Ethan_Hawke
+                    - img "Miniatura para Ethan Hawke" [ref=e273]
+                  - generic [ref=e274]:
+                    - link "Ethan Hawke" [ref=e276] [cursor=pointer]:
+                      - /url: /wiki/Ethan_Hawke
+                    - generic [ref=e277] [cursor=pointer]: de teatro de Williamstown 1993 - Sophistry - Xavier "Ex" Reynolds - Playwrights Horizons 1992-93 - A Gaivota - Konstantin Treplev - teatro Lyceum 1991...
+                    - generic [ref=e278] [cursor=pointer]: 73 kB (8 172 palavras) – 03h23min de 16 de março de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e279] [cursor=pointer]
+              - listitem [ref=e280]:
+                - generic [ref=e281]:
+                  - link "Miniatura para Ivã IV da Rússia" [ref=e283] [cursor=pointer]:
+                    - /url: /wiki/Iv%C3%A3_IV_da_R%C3%BAssia
+                    - img "Miniatura para Ivã IV da Rússia" [ref=e284]
+                  - generic [ref=e285]:
+                    - link "Ivã IV da Rússia" [ref=e287] [cursor=pointer]:
+                      - /url: /wiki/Iv%C3%A3_IV_da_R%C3%BAssia
+                    - generic [ref=e288] [cursor=pointer]: Fifteenth, Sixteenth, Seventeenth, and Eighteenth-century Novelists, Poets, Playwrights, Philosophers, and Other Creative Writers, from the First Published Critical...
+                    - generic [ref=e289] [cursor=pointer]: 74 kB (8 763 palavras) – 13h55min de 13 de abril de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e290] [cursor=pointer]
+              - listitem [ref=e291]:
+                - generic [ref=e292]:
+                  - link "Miniatura para Serra Leoa" [ref=e294] [cursor=pointer]:
+                    - /url: /wiki/Serra_Leoa
+                    - img "Miniatura para Serra Leoa" [ref=e295]
+                  - generic [ref=e296]:
+                    - link "Serra Leoa" [ref=e298] [cursor=pointer]:
+                      - /url: /wiki/Serra_Leoa
+                    - generic [ref=e299] [cursor=pointer]: "maio de 2021 «Sierra Leone: The Film is the inspiring story of a famous playwright and his mission to change his nation with great art» (em inglês). IOCD..."
+                    - generic [ref=e300] [cursor=pointer]: 178 kB (19 084 palavras) – 15h32min de 19 de maio de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e301] [cursor=pointer]
+              - listitem [ref=e302]:
+                - generic [ref=e303]:
+                  - link "Miniatura para Holodomor" [ref=e305] [cursor=pointer]:
+                    - /url: /wiki/Holodomor
+                    - img "Miniatura para Holodomor" [ref=e306]
+                  - generic [ref=e307]:
+                    - link "Holodomor" [ref=e309] [cursor=pointer]:
+                      - /url: /wiki/Holodomor
+                    - generic [ref=e310] [cursor=pointer]: 1917-1939, Paris, 1999, p. 225. ISBN 2020296292 How British Author And Playwright George Bernard Shaw Defended Stalin's Mass Killings, By Will Bennett,...
+                    - generic [ref=e311] [cursor=pointer]: 177 kB (19 341 palavras) – 18h46min de 1 de junho de 2025
+                    - button "Abrir a antevisão deste artigo." [ref=e312] [cursor=pointer]
+              - listitem [ref=e313]:
+                - generic [ref=e314]:
+                  - img [ref=e317]
+                  - generic [ref=e320]:
+                    - link "Existencialismo" [ref=e322] [cursor=pointer]:
+                      - /url: /wiki/Existencialismo
+                    - generic [ref=e323] [cursor=pointer]: "DiGaetani, John Louis (25 de janeiro de 2008). Stages of Struggle: Modern Playwrights and Their Psychological Inspirations. [S.l.]: McFarland. ISBN 978-0-7864-8259-7..."
+                    - generic [ref=e324] [cursor=pointer]: 97 kB (12 257 palavras) – 18h40min de 11 de abril de 2026
+                    - button "Abrir a antevisão deste artigo." [ref=e325] [cursor=pointer]
+              - listitem [ref=e326]:
+                - generic [ref=e327]:
+                  - link "Miniatura para Drama" [ref=e329] [cursor=pointer]:
+                    - /url: /wiki/Drama
+                    - img "Miniatura para Drama" [ref=e330]
+                  - generic [ref=e331]:
+                    - link "Drama" [ref=e333] [cursor=pointer]:
+                      - /url: /wiki/Drama
+                    - generic [ref=e334] [cursor=pointer]: peças como um "criador" em vez de um "escritor" é preservado na palavra playwright. The Theatre, um dos primeiros teatros construídos especificamente em...
+                    - generic [ref=e335] [cursor=pointer]: 13 kB (1 766 palavras) – 14h23min de 20 de outubro de 2023
+                    - button "Abrir a antevisão deste artigo." [ref=e336] [cursor=pointer]
+            - generic [ref=e337]:
+              - list:
+                - listitem [ref=e338]:
+                  - 'link "Origem: Wikiquote" [ref=e341] [cursor=pointer]':
+                    - /url: https://pt.wikiquote.org/wiki/Special:Search?search=Playwright&fulltext=1
+                  - link "Luis Alfaro" [ref=e343] [cursor=pointer]:
+                    - /url: https://pt.wikiquote.org/wiki/Luis_Alfaro
+                  - generic [ref=e344]: stories and finding ways of surviving. I can see now that I was always a playwright, I just didn't know or have the language for it then. Sobre sua infância
+                  - link "Ver todos os resultados" [ref=e346] [cursor=pointer]:
+                    - /url: https://pt.wikiquote.org/wiki/Special:Search?search=Playwright&fulltext=1
+                - listitem [ref=e347]:
+                  - 'link "Origem: Wikcionário" [ref=e350] [cursor=pointer]':
+                    - /url: https://pt.wiktionary.org/wiki/Special:Search?search=Playwright&fulltext=1
+                  - link "dramaturgo" [ref=e352] [cursor=pointer]:
+                    - /url: https://pt.wiktionary.org/wiki/dramaturgo
+                  - generic [ref=e353]: "dramaturgo (es) Francês: dramaturge (fr) Galego: dramaturgo (gl) Inglês: playwright (en), dramatist (en) Italiano: drammaturgo (it) Russo: драматург (ru)"
+                  - link "Ver todos os resultados" [ref=e355] [cursor=pointer]:
+                    - /url: https://pt.wiktionary.org/wiki/Special:Search?search=Playwright&fulltext=1
+                - listitem [ref=e356]:
+                  - 'link "Origem: Wikiversidade" [ref=e359] [cursor=pointer]':
+                    - /url: https://pt.wikiversity.org/wiki/Special:Search?search=Playwright&fulltext=1
+                  - link "Introdução ao Desenvolvimento de Sistemas de Software/Web Scraping" [ref=e361] [cursor=pointer]:
+                    - /url: https://pt.wikiversity.org/wiki/Introdu%C3%A7%C3%A3o_ao_Desenvolvimento_de_Sistemas_de_Software/Web_Scraping
+                  - generic [ref=e362]: "bancos de dados. Uso: projetos robustos e automação de grande volume. Playwright (ou Puppeteer) Automação moderna de navegadores headless, ideal para páginas"
+                  - link "Ver todos os resultados" [ref=e364] [cursor=pointer]:
+                    - /url: https://pt.wikiversity.org/wiki/Special:Search?search=Playwright&fulltext=1
+                - listitem [ref=e365]:
+                  - 'link "Origem: Wikisource" [ref=e368] [cursor=pointer]':
+                    - /url: https://pt.wikisource.org/wiki/Special:Search?search=Playwright&fulltext=1
+                  - link "Dicionário de Cultura Básica/Shakespeare" [ref=e370] [cursor=pointer]:
+                    - /url: https://pt.wikisource.org/wiki/Dicion%C3%A1rio_de_Cultura_B%C3%A1sica/Shakespeare
+                  - generic [ref=e371]: Carpeaux (História da Literatura Ocidental), ele foi essencialmente um playwright, um dramaturgo profissional, preocupado principalmente em ir ao encontro
+                  - link "Ver todos os resultados" [ref=e373] [cursor=pointer]:
+                    - /url: https://pt.wikisource.org/wiki/Special:Search?search=Playwright&fulltext=1
+                - listitem [ref=e374]:
+                  - strong [ref=e376]: Multimédia
+                  - generic [ref=e377]:
+                    - link [ref=e379] [cursor=pointer]:
+                      - /url: /wiki/Ficheiro:Playwright_Logo.svg
+                    - link [ref=e381] [cursor=pointer]:
+                      - /url: /wiki/Ficheiro:Hadley_Waters,_playwright,_1920.png
+                    - link [ref=e383] [cursor=pointer]:
+                      - /url: /wiki/Ficheiro:George_Kelly,_playwright.png
+                  - link "mais resultados" [ref=e385] [cursor=pointer]:
+                    - /url: /w/index.php?title=Especial:Search&search=Playwright&fulltext=1&profile=images
+            - generic [ref=e387]:
+              - combobox [ref=e390]:
+                - option "20 linhas" [selected]
+                - option "50 linhas"
+                - option "100 linhas"
+                - option "250 linhas"
+                - option "500 linhas"
+              - generic [ref=e391]:
+                - button "Primeira página" [ref=e392] [cursor=pointer]
+                - button "Página anterior" [ref=e394] [cursor=pointer]
+                - button "Página seguinte" [ref=e396] [cursor=pointer]
+    - contentinfo [ref=e399]:
+      - list
+      - list:
+        - listitem [ref=e400]:
+          - link "Política de privacidade" [ref=e401] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/pt-br
+        - listitem [ref=e402]:
+          - link "Sobre a Wikipédia" [ref=e403] [cursor=pointer]:
+            - /url: /wiki/Wikip%C3%A9dia:Sobre_a_Wikip%C3%A9dia
+        - listitem [ref=e404]:
+          - link "Avisos gerais" [ref=e405] [cursor=pointer]:
+            - /url: /wiki/Wikip%C3%A9dia:Isen%C3%A7%C3%A3o_de_responsabilidade_geral
+        - listitem [ref=e406]:
+          - link "Contactos Legais e Segurança" [ref=e407] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=e408]:
+          - link "Código de Conduta" [ref=e409] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct
+        - listitem [ref=e410]:
+          - link "Desenvolvedores" [ref=e411] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=e412]:
+          - link "Estatísticas" [ref=e413] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/pt.wikipedia.org
+        - listitem [ref=e414]:
+          - link "Declaração sobre cookies" [ref=e415] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=e416]:
+          - link "Versão móvel" [ref=e417] [cursor=pointer]:
+            - /url: //pt.wikipedia.org/w/index.php?title=Especial:Pesquisar&go=Go&search=Playwright&mobileaction=toggle_view_mobile
+      - list [ref=e418]:
+        - listitem [ref=e419]:
+          - link "Wikimedia Foundation" [ref=e420] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=e422]
+        - listitem [ref=e423]:
+          - link "Powered by MediaWiki" [ref=e424] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=e426]
+  - generic [ref=e427]:
+    - list

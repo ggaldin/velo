@@ -1,0 +1,226 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - heading "Wikipedia A Enciclopédia Livre" [level=1] [ref=e4]:
+      - generic [ref=e5]: Wikipedia
+      - strong [ref=e6]: A Enciclopédia Livre
+    - navigation "Top languages" [ref=e7]:
+      - link "Português 1.171.000+ artigos" [ref=e9] [cursor=pointer]:
+        - /url: //pt.wikipedia.org/
+        - strong [ref=e10]: Português
+        - generic [ref=e11]: 1.171.000+ artigos
+      - link "English 7,180,000+ articles" [ref=e13] [cursor=pointer]:
+        - /url: //en.wikipedia.org/
+        - strong [ref=e14]: English
+        - generic [ref=e15]: 7,180,000+ articles
+      - link "日本語 1,501,000+ 記事" [ref=e17] [cursor=pointer]:
+        - /url: //ja.wikipedia.org/
+        - strong [ref=e18]: 日本語
+        - generic [ref=e19]: 1,501,000+ 記事
+      - link "Deutsch 3.120.000+ Artikel" [ref=e21] [cursor=pointer]:
+        - /url: //de.wikipedia.org/
+        - strong [ref=e22]: Deutsch
+        - generic [ref=e23]: 3.120.000+ Artikel
+      - link "Français 2 757 000+ articles" [ref=e25] [cursor=pointer]:
+        - /url: //fr.wikipedia.org/
+        - strong [ref=e26]: Français
+        - generic [ref=e27]: 2 757 000+ articles
+      - link "Русский 2 099 000+ статей" [ref=e29] [cursor=pointer]:
+        - /url: //ru.wikipedia.org/
+        - strong [ref=e30]: Русский
+        - generic [ref=e31]: 2 099 000+ статей
+      - link "中文 1,534,000+ 条目 / 條目" [ref=e33] [cursor=pointer]:
+        - /url: //zh.wikipedia.org/
+        - strong [ref=e34]: 中文
+        - generic [ref=e35]: 1,534,000+ 条目 / 條目
+      - link "Español 2.111.000+ artículos" [ref=e37] [cursor=pointer]:
+        - /url: //es.wikipedia.org/
+        - strong [ref=e38]: Español
+        - generic [ref=e39]: 2.111.000+ artículos
+      - link "Italiano 1.968.000+ voci" [ref=e41] [cursor=pointer]:
+        - /url: //it.wikipedia.org/
+        - strong [ref=e42]: Italiano
+        - generic [ref=e43]: 1.968.000+ voci
+      - link "Polski 1 694 000+ haseł" [ref=e45] [cursor=pointer]:
+        - /url: //pl.wikipedia.org/
+        - strong [ref=e46]: Polski
+        - generic [ref=e47]: 1 694 000+ haseł
+    - search [ref=e48]:
+      - group [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: Search Wikipedia
+          - searchbox "Search Wikipedia" [active] [ref=e53]
+          - generic [ref=e55]:
+            - generic [ref=e56]: pt
+            - combobox "pt" [ref=e57] [cursor=pointer]:
+              - option "Afrikaans"
+              - option "Shqip"
+              - option "العربية"
+              - option "Asturianu"
+              - option "Azərbaycanca"
+              - option "Български"
+              - option "閩南語 / Bân-lâm-gú"
+              - option "বাংলা"
+              - option "Беларуская"
+              - option "Català"
+              - option "Čeština"
+              - option "Cymraeg"
+              - option "Dansk"
+              - option "Deutsch"
+              - option "Eesti"
+              - option "Ελληνικά"
+              - option "English"
+              - option "Español"
+              - option "Esperanto"
+              - option "Euskara"
+              - option "فارسی"
+              - option "Français"
+              - option "Galego"
+              - option "한국어"
+              - option "Հայերեն"
+              - option "हिन्दी"
+              - option "Hrvatski"
+              - option "Bahasa Indonesia"
+              - option "Italiano"
+              - option "עברית"
+              - option "ქართული"
+              - option "Ladin"
+              - option "Latina"
+              - option "Latviešu"
+              - option "Lietuvių"
+              - option "Magyar"
+              - option "Македонски"
+              - option "Malagasy"
+              - option "मराठी"
+              - option "مصرى"
+              - option "Bahasa Melayu"
+              - option "Bahaso Minangkabau"
+              - option "မြန်မာဘာသာ"
+              - option "Nederlands"
+              - option "日本語"
+              - option "Norsk (bokmål)"
+              - option "Norsk (nynorsk)"
+              - option "Нохчийн"
+              - option "Oʻzbekcha / Ўзбекча"
+              - option "Polski"
+              - option "Português" [selected]
+              - option "Қазақша / Qazaqşa / قازاقشا"
+              - option "Română"
+              - option "Simple English"
+              - option "Sinugboanong Binisaya"
+              - option "Slovenčina"
+              - option "Slovenščina"
+              - option "Српски / Srpski"
+              - option "Srpskohrvatski / Српскохрватски"
+              - option "Suomi"
+              - option "Svenska"
+              - option "Kiswahili"
+              - option "தமிழ்"
+              - option "Татарча / Tatarça"
+              - option "తెలుగు"
+              - option "ภาษาไทย"
+              - option "Тоҷикӣ"
+              - option "تۆرکجه"
+              - option "Türkçe"
+              - option "Українська"
+              - option "اردو"
+              - option "Tiếng Việt"
+              - option "Winaray"
+              - option "中文"
+              - option "Русский"
+              - option "粵語"
+        - button "Search" [ref=e59] [cursor=pointer]:
+          - generic [ref=e60]: Search
+    - navigation "All languages" [ref=e61]:
+      - button "Leia a Wikipédia no seu idioma" [ref=e63] [cursor=pointer]: Leia a Wikipédia no seu idioma
+    - separator [ref=e67]
+  - contentinfo [ref=e68]:
+    - generic [ref=e70]:
+      - generic [ref=e72]: A Wikipédia é alojada pela Fundação Wikimédia, uma organização sem fins lucrativos que também aloja vários outros projetos.
+      - link "Pode apoiar o nosso trabalho com uma doação." [ref=e74] [cursor=pointer]:
+        - /url: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+    - generic [ref=e77]:
+      - strong [ref=e79]: Transferir Wikipédia para Android ou iOS
+      - paragraph [ref=e80]: Guarde os seus artigos preferidos para ler ''off-line'', sincronize as suas listas de leitura entre dispositivos e personalize a sua experiência de leitura com a aplicação oficial da Wikipédia.
+      - list [ref=e81]:
+        - listitem [ref=e82]:
+          - link "Play Store da Google" [ref=e83] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+            - generic [ref=e84]: Play Store da Google
+        - listitem [ref=e85]:
+          - link "App Store da Apple" [ref=e86] [cursor=pointer]:
+            - /url: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+            - generic [ref=e87]: App Store da Apple
+    - navigation "Other projects" [ref=e88]:
+      - link "Commons Coleção de multimédia livre" [ref=e90] [cursor=pointer]:
+        - /url: //commons.wikimedia.org/
+        - generic [ref=e93]:
+          - generic [ref=e94]: Commons
+          - generic [ref=e95]: Coleção de multimédia livre
+      - link "Wikivoyage O guia de viagens livre" [ref=e97] [cursor=pointer]:
+        - /url: //www.wikivoyage.org/
+        - generic [ref=e100]:
+          - generic [ref=e101]: Wikivoyage
+          - generic [ref=e102]: O guia de viagens livre
+      - link "Wikcionário O dicionário livre" [ref=e104] [cursor=pointer]:
+        - /url: //www.wiktionary.org/
+        - generic [ref=e107]:
+          - generic [ref=e108]: Wikcionário
+          - generic [ref=e109]: O dicionário livre
+      - link "Wikilivros Manuais gratuitos" [ref=e111] [cursor=pointer]:
+        - /url: //www.wikibooks.org/
+        - generic [ref=e114]:
+          - generic [ref=e115]: Wikilivros
+          - generic [ref=e116]: Manuais gratuitos
+      - link "Wikidata A base de conhecimento livre" [ref=e118] [cursor=pointer]:
+        - /url: //www.wikidata.org/
+        - generic [ref=e121]:
+          - generic [ref=e122]: Wikidata
+          - generic [ref=e123]: A base de conhecimento livre
+      - link "Wikiversidade Recursos de aprendizagem livres" [ref=e125] [cursor=pointer]:
+        - /url: //www.wikiversity.org/
+        - generic [ref=e128]:
+          - generic [ref=e129]: Wikiversidade
+          - generic [ref=e130]: Recursos de aprendizagem livres
+      - link "Wikiquote Compêndio de citações gratuito" [ref=e132] [cursor=pointer]:
+        - /url: //www.wikiquote.org/
+        - generic [ref=e135]:
+          - generic [ref=e136]: Wikiquote
+          - generic [ref=e137]: Compêndio de citações gratuito
+      - link "MediaWiki Programa de wiki livre e aberto" [ref=e139] [cursor=pointer]:
+        - /url: //www.mediawiki.org/
+        - generic [ref=e142]:
+          - generic [ref=e143]: MediaWiki
+          - generic [ref=e144]: Programa de wiki livre e aberto
+      - link "Wikisource Biblioteca de conteúdo livre" [ref=e146] [cursor=pointer]:
+        - /url: //www.wikisource.org/
+        - generic [ref=e149]:
+          - generic [ref=e150]: Wikisource
+          - generic [ref=e151]: Biblioteca de conteúdo livre
+      - link "Wikiespécies A diretoria de espécies livre" [ref=e153] [cursor=pointer]:
+        - /url: //species.wikimedia.org/
+        - generic [ref=e156]:
+          - generic [ref=e157]: Wikiespécies
+          - generic [ref=e158]: A diretoria de espécies livre
+      - link "Wikifunctions Free function library" [ref=e160] [cursor=pointer]:
+        - /url: //www.wikifunctions.org/
+        - generic [ref=e163]:
+          - generic [ref=e164]: Wikifunctions
+          - generic [ref=e165]: Free function library
+      - link "Meta-Wiki Coordenação e documentação comunitária" [ref=e167] [cursor=pointer]:
+        - /url: //meta.wikimedia.org/
+        - generic [ref=e170]:
+          - generic [ref=e171]: Meta-Wiki
+          - generic [ref=e172]: Coordenação e documentação comunitária
+    - separator [ref=e173]
+    - paragraph [ref=e174]:
+      - generic [ref=e175]:
+        - text: Esta página é disponibilizada sob a
+        - link "licença Creative Commons Attribution-ShareAlike" [ref=e176] [cursor=pointer]:
+          - /url: https://creativecommons.org/licenses/by-sa/4.0/deed.pt/
+        - text: •
+      - generic [ref=e177]:
+        - link "Termos de Utilização" [ref=e178] [cursor=pointer]:
+          - /url: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/pt
+        - text: •
+      - link "Política de Privacidade" [ref=e180] [cursor=pointer]:
+        - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy
