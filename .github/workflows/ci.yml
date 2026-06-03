@@ -77,7 +77,7 @@ jobs:
 
   e2e-tests:
     name: Run E2E tests
-    needs: [unit-tests]
+    needs: [unit-tests, build-and-deploy]
     runs-on: ubuntu-latest
 
     steps:
@@ -96,17 +96,35 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      # Passo 5: Instalação do Chromium
-      - name: Install Playwright Browser
-        run: yarn playwright install --with-deps chromium
+      # Passo 5: Obter a versão do Playwright instalada para chave do cache
+      - name: Get Playwright version
+        id: playwright-version
+        run: echo "PLAYWRIGHT_VERSION=$(node -e "console.log(require('@playwright/test/package.json').version)")" >> $GITHUB_OUTPUT
 
-      # Passo 6: Executar os testes de regreçao
+      # Passo 6: Configurar cache para os navegadores do Playwright
+      - name: Cache Playwright Browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.PLAYWRIGHT_VERSION }}
+
+      # Passo 7: Instalar o navegador Chromium (apenas se não estiver em cache)
+      - name: Install Playwright Browser
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: yarn playwright install chromium
+
+      # Passo 8: Instalar dependências do sistema operacional para o Chromium
+      - name: Install Playwright system dependencies
+        run: yarn playwright install-deps chromium
+
+      # Passo 9: Executar os testes de regressão
       - name: Run E2E regression Tests
         run: yarn playwright test playwright/e2e/online.spec.ts
         env:
           BASE_URL: ${{ needs.build-and-deploy.outputs.deployment-url }} 
 
-      # Passo 7: Relatório de testes Automatizados
+      # Passo 10: Relatório de testes Automatizados
       - name: Upload Playwright Report
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v7.0.1
