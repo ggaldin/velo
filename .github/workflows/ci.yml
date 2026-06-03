@@ -120,7 +120,7 @@ jobs:
 
       # Passo 9: Executar os testes de regressão
       - name: Run E2E regression Tests
-        run: yarn playwright test playwright/e2e/online.spec.ts
+        run: yarn playwright test
         env:
           BASE_URL: ${{ needs.build-and-deploy.outputs.deployment-url }} 
 
