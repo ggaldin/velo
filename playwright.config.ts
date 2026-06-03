@@ -48,8 +48,8 @@ export default defineConfig({
     // baseURL: process.env.BASE_URL || 'http://localhost:5173',
     // baseURL: process.env.BASE_URL || https://velo-ggaldin.vercel.app,
     //baseURL: 'https://velo-ggaldin.vercel.app',
-    baseURL: 'https://velo-1169d0m26-gustavo-galdin-s-projects.vercel.app',
-
+    // baseURL: 'https://velo-1169d0m26-gustavo-galdin-s-projects.vercel.app',
+    baseURL: process.env.BASE_URL || 'http://localhost:5173',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
